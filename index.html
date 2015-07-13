@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html data-ng-app="admin">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sample admin page</title>
+		<link rel="stylesheet" href="vendor/bower-asset/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="vendor/bower-asset/angular-ui-grid/ui-grid.css">
+		<script src="vendor/bower-asset/angular/angular.js"></script>
+		<script src="vendor/bower-asset/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="vendor/bower-asset/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="vendor/bower-asset/angular-ui-grid/ui-grid.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6"><h1>Admin panel</h1></div>
+				<div class="col-md-3">
+					<div class="dropdown" data-dropdown>
+						<a href="#" class="dropdown-toggle" data-dropdown-toggle>Hello, USERNAME!</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li data-ui-sref-active="active"><a data-ui-sref="customers">Клиенты</a></li>
+						<li data-ui-sref-active="active"><a data-ui-sref="orders">Заказы</a></li>
+						<li data-ui-sref-active="active"><a data-ui-sref="currencies">Валюты</a></li>
+						<li data-ui-sref-active="active"><a data-ui-sref="accounts">Счета</a></li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<div data-ui-view></div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

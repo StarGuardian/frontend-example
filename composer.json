@@ -1,0 +1,19 @@
+{
+    "name": "star-guardian/frontend-example",
+    "description": "Simple admin page example",
+    "type": "project",
+    "license": "GPL v3",
+    "authors": [
+        {
+            "name": "Mikhail Buzuverov",
+            "email": "star.guardian.mgn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bower-asset/angular-bootstrap": "^0.13.0@dev",
+        "bower-asset/angular-ui-router": "^0.2.15@dev",
+        "bower-asset/bootstrap": "dev-master",
+        "bower-asset/angular-ui-grid": "dev-master"
+    }
+}
